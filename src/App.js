@@ -1,11 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from './images/Pokemon-Logo.png';
+import './App.scss';
+import pokemonBall from './images/pokeball.png';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <div>
+          <img src={logo} className="pokemonLogo" alt="logo" />
+        </div>
+        <img src={pokemonBall} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
