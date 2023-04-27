@@ -1,12 +1,23 @@
+.mainContainer{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
 
+.pokemonLogo{
+  max-width: 95vh;
+}
 
-
-
-
+.pokeball{
+  max-width: 30vh;
+  margin-top: -12vh;
+}
 
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
+  .pokeball {
     animation: App-logo-spin infinite 20s linear;
   }
 }
