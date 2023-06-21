@@ -4,8 +4,9 @@ import logo from '../../images/Pokemon-Logo.png';
 import pokemonBall from '../../images/pokeball.png';
 
 
-const Header = () => {
+const Header = () => { 
   return (
+
     <div className='mainContainer'>
       <div>
       <img src={logo} className="pokemonLogo" alt="logo" />
