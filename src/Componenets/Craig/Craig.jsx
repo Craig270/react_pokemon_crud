@@ -7,7 +7,8 @@ const Craig = () => {
         {" "}
         This comp was created to show that I can get main's branch to move past
         another branch by doing the fallowing steps: I created a new branch and
-        made some changes then commited those changes
+        made some changes then commited those changes. This changes has only
+        happened while on the main branch.
       </p>
     </div>
   );
