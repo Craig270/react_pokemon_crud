@@ -18,9 +18,7 @@ function App() {
     setIsModalOpen(false);
   }
 
-  const flipModal = () => {
-    setIsModalOpen(p => !p)
-  }
+
 
   return (
     <div className="App">
@@ -35,7 +33,7 @@ function App() {
       <Modal show={isModalOpen} onClose={closeModal}>
 
       </Modal>
-
+      <p> </p>
     </div>
   );
 }
