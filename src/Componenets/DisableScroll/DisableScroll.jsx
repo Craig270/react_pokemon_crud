@@ -13,7 +13,7 @@ const DisableScroll = () => {
 
   return (
     <div>
-      <LoremIpsum p={3} />{" "}
+      <LoremIpsum p={33} />{" "}
     </div>
   );
 };
