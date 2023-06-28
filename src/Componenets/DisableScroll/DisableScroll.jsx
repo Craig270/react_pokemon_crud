@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./DisableScroll";
 import Modal from "../Modal/ModalExample";
+import { LoremIpsum } from "react-lorem-ipsum";
 
 const DisableScroll = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -10,7 +11,11 @@ const DisableScroll = () => {
     document.body.classList.add("disable-scrolling");
   };
 
-  return <div>DisableScroll</div>;
+  return (
+    <div>
+      <LoremIpsum p={3} />{" "}
+    </div>
+  );
 };
 
 export default DisableScroll;
