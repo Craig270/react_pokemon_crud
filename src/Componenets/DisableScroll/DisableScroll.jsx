@@ -8,7 +8,7 @@ const DisableScroll = () => {
 
   const openModal = () => {
     setIsModalOpen(true);
-    document.body.style.overflow = "hidden";
+    document.body.style.overflow = "hidden"; //This will stop the parent from having a scroll effect. Still keeping the modal scroll.
     document.body.classList.add("disable-scrolling"); // Apply the CSS class to disable scrolling
   };
 
