@@ -8,12 +8,19 @@ const DisableScroll = () => {
 
   const openModal = () => {
     setIsModalOpen(true);
-    document.body.classList.add("disable-scrolling");
+    document.body.style.overflow = "hidden";
+    document.body.classList.add("disable-scrolling"); // Apply the CSS class to disable scrolling
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+    document.body.classList.remove("disable-scrolling"); // Remove the CSS class to re-enable scrolling
   };
 
   return (
-    <div>
-      <LoremIpsum p={33} />{" "}
+    <div className="disable-scrolling">
+      <LoremIpsum p={33} /> <button onClick={openModal}>Open Modal</button>
+      <Modal show={isModalOpen} onClose={closeModal}></Modal>
     </div>
   );
 };
