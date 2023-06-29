@@ -6,6 +6,7 @@ import './App.scss';
 // import Goals from './Componenets/Goals/Goals';
 // import OnBlurExample from './Componenets/onBlur/OnBlurExample';
 import Modal from './Componenets/Modal/ModalExample';
+import DisableScroll from './Componenets/DisableScroll/DisableScroll';
 
 function App() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -33,7 +34,8 @@ function App() {
       <Modal show={isModalOpen} onClose={closeModal}>
 
       </Modal>
-
+      <DisableScroll />
+      <p> </p>
     </div>
   );
 }
