@@ -15,7 +15,7 @@ const DisableScroll = () => {
   };
 
   return (
-    <div className="disable-scrolling">
+    <div>
       <LoremIpsum p={33} />
       <button onClick={flipIsModalOpen}>Open Modal</button>
       <Modal show={isModalOpen} onClose={flipIsModalOpen}></Modal>
