@@ -17,11 +17,19 @@ const DisableScroll = () => {
     document.body.classList.remove("disable-scrolling"); // Remove the CSS class to re-enable scrolling
   };
 
+  const flipIsModalOpen = () => {
+    setIsModalOpen(!isModalOpen);
+    console.log(`Set: ${isModalOpen}`);
+    isModalOpen
+      ? document.body.classList.remove("disable-scrolling")
+      : document.body.classList.add("disable-scrolling");
+  };
+
   return (
     <div className="disable-scrolling">
       <LoremIpsum p={33} />
-      <button onClick={openModal}>Open Modal</button>
-      <Modal show={isModalOpen} onClose={closeModal}></Modal>
+      <button onClick={flipIsModalOpen}>Open Modal</button>
+      <Modal show={isModalOpen} onClose={flipIsModalOpen}></Modal>
     </div>
   );
 };

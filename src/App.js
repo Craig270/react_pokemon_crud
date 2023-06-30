@@ -11,14 +11,12 @@ import DisableScroll from './Componenets/DisableScroll/DisableScroll';
 function App() {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-  const openModal = () => {
-    setIsModalOpen(true);
-  }
-
-  const closeModal = () => {
-    setIsModalOpen(false);
-  }
-
+  const flipIsModalOpen = () => {
+    setIsModalOpen(!isModalOpen);
+    console.log(`Set: ${isModalOpen}`);
+    isModalOpen ? document.body.classList.remove("disable-scrolling") :
+      document.body.classList.add("disable-scrolling");
+  };
 
 
   return (
@@ -29,9 +27,9 @@ function App() {
       <Goals title={"Learn about React"} description={"Work to get better at React"} />
       <Goals title={"Learn Hooks"} description={"I want to learn and understand hooks much better"} />  
       <OnBlurExample /> */}
-      <button onClick={openModal}>Open Modal</button>
+      <button onClick={flipIsModalOpen}>Open Modal</button>
 
-      <Modal show={isModalOpen} onClose={closeModal}>
+      <Modal show={isModalOpen} onClose={flipIsModalOpen}>
 
       </Modal>
       <DisableScroll />
