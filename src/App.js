@@ -5,8 +5,10 @@ import './App.scss';
 // import Counter from './Componenets/Counter/Counter';
 // import Goals from './Componenets/Goals/Goals';
 // import OnBlurExample from './Componenets/onBlur/OnBlurExample';
+
 import Modal from './Componenets/Modal/ModalExample';
 import DisableScroll from './Componenets/DisableScroll/DisableScroll';
+import UseEffectPractice from './Componenets/UseEffectPractice/UseEffectPractice';
 
 function App() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -26,14 +28,15 @@ function App() {
       <Counter />
       <Goals title={"Learn about React"} description={"Work to get better at React"} />
       <Goals title={"Learn Hooks"} description={"I want to learn and understand hooks much better"} />  
-      <OnBlurExample /> */}
+      <OnBlurExample /> 
       <button onClick={flipIsModalOpen}>Open Modal</button>
 
       <Modal show={isModalOpen} onClose={flipIsModalOpen}>
 
       </Modal>
       <DisableScroll />
-      <p> </p>
+      */}
+      <UseEffectPractice />
     </div>
   );
 }
